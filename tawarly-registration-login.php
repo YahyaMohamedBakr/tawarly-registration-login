@@ -318,7 +318,7 @@ function tawarly_add_new_student() {
 			  $sql = $wpdb->prepare($sql);
 			  $results = $wpdb->query($sql);
 
-			  // log the new user in
+			  // log the new user in//
 			  try{
 				wp_setcookie($user_login, $user_pass, true);
 			  	wp_set_current_user($new_user_id, $user_login);	
