@@ -1,9 +1,9 @@
 # login-registration-wp-plugin
-![kamerpower_cover](https://cloud.githubusercontent.com/assets/21700408/18216254/89242036-714d-11e6-8182-f232a94c1321.jpg)
+![tawarly_cover](https://cloud.githubusercontent.com/assets/21700408/18216254/89242036-714d-11e6-8182-f232a94c1321.jpg)
 A shortcode based Lightweight WordPress plugin that creates custom login and registration forms that can be implemented using a shortcode.
 
-=== Kamerpower WP Custom Login & Registration (Lightweight plugin for Wordpress)  ===
-Contributors: Alondi . C. https://kamerpower.com/fr/
+=== tawarly WP Custom Login & Registration (Lightweight plugin for Wordpress)  ===
+Contributors: Alondi . C. https://tawarly.com/fr/
 Tags: custom registration form, custom login, custom redirects, front-end login, front-end user registration, recaptcha, shortcodes
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=73UWQZ6ZKHCJ6
 Requires at least: 4.0
@@ -26,17 +26,17 @@ Features of the plugin include:
 
 
 == Installation ==
-Installing Kamerpower WP Custom Login & Registration (Lightweight plugin for Wordpress) is just like any other WordPress plugin. Navigate to your WordPress “Plugins” page, inside of your WordPress dashboard, and follow these instructions:
+Installing tawarly WP Custom Login & Registration (Lightweight plugin for Wordpress) is just like any other WordPress plugin. Navigate to your WordPress “Plugins” page, inside of your WordPress dashboard, and follow these instructions:
 
-In the search field enter \"Kamerpower WP Custom Login & Registration\". Click \"Search Plugins\", or hit Enter.
-Select \"Kamerpower WP Custom Login & Registration\" and click either \"Details\" or \"Install Now\".
+In the search field enter \"tawarly WP Custom Login & Registration\". Click \"Search Plugins\", or hit Enter.
+Select \"tawarly WP Custom Login & Registration\" and click either \"Details\" or \"Install Now\".
 Once installed, click \"Activate\".
 
 OR
 
 1. Download the zip file from wordpress.org
-2. Unzip kamerpower-registration-login.zip
-3. Upload all the files to the /wp-content/plugins/kamerpower-registration-login
+2. Unzip tawarly-registration-login.zip
+3. Upload all the files to the /wp-content/plugins/tawarly-registration-login
 4. Activate the plugin through the \'Plugins\' menu in WordPress.
 
 
@@ -64,4 +64,4 @@ Before installing the plugin, create two pages. The first page named \"login\"  
 == Upgrade Notice ==
 1.0
 
-* This is the very first version of the Kamerpower WP Custom Login & Registration (Lightweight plugin for Wordpress) plugin.
+* This is the very first version of the tawarly WP Custom Login & Registration (Lightweight plugin for Wordpress) plugin.

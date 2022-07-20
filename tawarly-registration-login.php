@@ -59,6 +59,8 @@ function tawarly_student_registration_form() {
 }
 add_shortcode('register_student_form', 'tawarly_student_registration_form');
 
+
+
 /* ------------------------------------------------------------------------- */
 // registration form fields
 /* ------------------------------------------------------------------------- */
@@ -343,6 +345,7 @@ function tawarly_add_new_member(){
 	tawarly_add_new_student();
 }
 add_action('init', 'tawarly_add_new_member');
+
 
 /* ------------------------------------------------------------------------- */
 // used for tracking error messages
