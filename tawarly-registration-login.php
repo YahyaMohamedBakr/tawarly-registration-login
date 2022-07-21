@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Tawarly Custom Login & Registration Form
-Plugin URI: https://tawarly.com/
+Plugin URI: https://github.com/sivviii/tawarly-registration-login
 Description: A shortcode based Lightweight WordPress plugin that creates custom login and registration forms that can be implemented using a shortcode. [register_tutor_form] , [register_student_form]
 Version: 1.0
 Author: Tawarly
