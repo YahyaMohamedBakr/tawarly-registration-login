@@ -232,16 +232,28 @@ function tawarly_add_new_tutor() {
 				)
 			);
 			if($new_user_id) {
-				// send an email to the admin alerting them of the registration
-				wp_new_user_notification($new_user_id);
- 
-				// log the new user in
-				wp_setcookie($user_login, $user_pass, true);
-				wp_set_current_user($new_user_id, $user_login);	
-				do_action('wp_login', $user_login);
- 
-				// send the newly created user to the home page after logging them in
-				wp_redirect(home_url("/")); exit;
+				 // send an email to the admin alerting them of the registration
+				 wp_new_user_notification($new_user_id);
+
+				 // add amilia user
+				  global $wpdb;
+				  $sql = "INSERT INTO `".$wpdb->prefix."amelia_users` (`status`, `type`, `externalId`, `firstName`, `lastName`, `email`) 
+				  VALUES ('visible','wpamelia-provider','$new_user_id','$user_first','$user_last','$user_email')";
+				  
+				  $sql = $wpdb->prepare($sql);
+				  $results = $wpdb->query($sql);
+	
+				  // log the new user in//
+				  try{
+					wp_setcookie($user_login, $user_pass, true);
+					  wp_set_current_user($new_user_id, $user_login);	
+					  do_action('wp_login', $user_login,'');
+				  }
+				  catch(Exception $e){
+				  }
+	
+				  // send the newly created user to the home page after logging them in
+				  wp_redirect(home_url("/")); exit;
 			}
  
 		}
