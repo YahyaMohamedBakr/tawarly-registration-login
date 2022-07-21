@@ -67,7 +67,7 @@ add_shortcode('register_student_form', 'tawarly_student_registration_form');
 function tawarly_tutor_registration_form_fields() {
  
 	ob_start(); ?>	
-		<h3 class="tawarly_header"><?php _e('Register New Account'); ?></h3>
+		<h3 class="tawarly_header"><?php _e('تسجيل معلم جديد'); ?></h3>
  
 		<?php 
 		// show any error messages after form submission
@@ -77,32 +77,32 @@ function tawarly_tutor_registration_form_fields() {
 			<fieldset>
 				<input type="hidden" name="tawarly_tutor_registration" value="1"/>
 				<p>
-					<label for="tawarly_user_Login"><?php _e('Username'); ?></label>
+					<label for="tawarly_user_Login"><?php _e('اسم المستخدم'); ?></label>
 					<input name="tawarly_user_login" id="tawarly_user_login" class="required" type="text"/>
 				</p>
 				<p>
-					<label for="tawarly_user_email"><?php _e('Email'); ?></label>
+					<label for="tawarly_user_email"><?php _e('البريد الإلكتروني'); ?></label>
 					<input name="tawarly_user_email" id="tawarly_user_email" class="required" type="email"/>
 				</p>
 				<p>
-					<label for="tawarly_user_first"><?php _e('First Name'); ?></label>
+					<label for="tawarly_user_first"><?php _e('الاسم الأول'); ?></label>
 					<input name="tawarly_user_first" id="tawarly_user_first" class="required" type="text"/>
 				</p>
 				<p>
-					<label for="tawarly_user_last"><?php _e('Last Name'); ?></label>
+					<label for="tawarly_user_last"><?php _e('الاسم الأخير'); ?></label>
 					<input name="tawarly_user_last" id="tawarly_user_last" class="required" type="text"/>
 				</p>
 				<p>
-					<label for="password"><?php _e('Password'); ?></label>
+					<label for="password"><?php _e('كلمة المرور'); ?></label>
 					<input name="tawarly_user_pass" id="password" class="required" type="password"/>
 				</p>
 				<p>
-					<label for="password_again"><?php _e('Password Again'); ?></label>
+					<label for="password_again"><?php _e('كلمة المرور'); ?></label>
 					<input name="tawarly_user_pass_confirm" id="password_again" class="required" type="password"/>
 				</p>
 				<p>
 					<input type="hidden" name="tawarly_register_nonce" value="<?php echo wp_create_nonce('tawarly-register-nonce'); ?>"/>
-					<input type="submit" value="<?php _e('Register Your Account'); ?>"/>
+					<input type="submit" value="<?php _e('سجل الآن'); ?>"/>
 				</p>
 			</fieldset>
 		</form>
@@ -113,7 +113,7 @@ function tawarly_tutor_registration_form_fields() {
 function tawarly_student_registration_form_fields() {
  
 	ob_start(); ?>	
-		<h3 class="tawarly_header"><?php _e('Register New Account'); ?></h3>
+		<h3 class="tawarly_header"><?php _e('تسجيل طالب جديد'); ?></h3>
  
 		<?php 
 		// show any error messages after form submission
@@ -123,42 +123,43 @@ function tawarly_student_registration_form_fields() {
 			<fieldset>
 			<input type="hidden" name="tawarly_student_registration" value="1"/>
 				<p>
-					<label for="tawarly_user_Login"><?php _e('Username'); ?></label>
+					<label for="tawarly_user_Login"><?php _e('اسم المستخدم'); ?></label>
 					<input name="tawarly_user_login" id="tawarly_user_login" class="required" type="text"/>
 				</p>
 				<p>
-					<label for="tawarly_user_email"><?php _e('Email'); ?></label>
+					<label for="tawarly_user_email"><?php _e('البريد الإلكتروني'); ?></label>
 					<input name="tawarly_user_email" id="tawarly_user_email" class="required" type="email"/>
 				</p>
 				<p>
-					<label for="tawarly_user_phone"><?php _e('Phone'); ?></label>
+					<label for="tawarly_user_phone"><?php _e('رقم الجوال'); ?></label>
 					<input name="tawarly_user_phone" id="tawarly_user_phone" class="required" type="tel"/>
+					<button type="button" onclick="verifyOtp();">تأكيد رقم الهاتف</button>
 					<span id="span-phone-vrified" style="color: green;"></span>
 				</p>
 
-				<button type="button" onclick="verifyOtp();">Verify</button>
+				
 
 				<div name="recaptcha-container" id="recaptcha-container"></div>
 
 				<p>
-					<label for="tawarly_user_first"><?php _e('First Name'); ?></label>
+					<label for="tawarly_user_first"><?php _e('الاسم الأول'); ?></label>
 					<input name="tawarly_user_first" id="tawarly_user_first" class="required" type="text"/>
 				</p>
 				<p>
-					<label for="tawarly_user_last"><?php _e('Last Name'); ?></label>
+					<label for="tawarly_user_last"><?php _e('الاسم الأخير'); ?></label>
 					<input name="tawarly_user_last" id="tawarly_user_last" class="required" type="text"/>
 				</p>
 				<p>
-					<label for="password"><?php _e('Password'); ?></label>
+					<label for="password"><?php _e('كلمة المرور'); ?></label>
 					<input name="tawarly_user_pass" id="password" class="required" type="password"/>
 				</p>
 				<p>
-					<label for="password_again"><?php _e('Password Again'); ?></label>
+					<label for="password_again"><?php _e('تأكيد كلمة المرور'); ?></label>
 					<input name="tawarly_user_pass_confirm" id="password_again" class="required" type="password"/>
 				</p>
 				<p>
 					<input type="hidden" name="tawarly_register_nonce" value="<?php echo wp_create_nonce('tawarly-register-nonce'); ?>"/>
-					<button type="button" onclick="submitForm();" id="tawarly_user_submit"><?php _e('Register Your Account'); ?></button>
+					<button type="button" onclick="submitForm();" id="tawarly_user_submit"><?php _e('سجل الآن'); ?></button>
 				</p>
 			</fieldset>
 		</form>
